@@ -1,0 +1,204 @@
+import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=4cb269bc"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import { BadgeCheck, Brush, HeartHandshake, Layers3 } from "/node_modules/.vite/deps/lucide-react.js?v=4cb269bc";
+import Container from "/src/components/common/Container.jsx";
+import Card from "/src/components/ui/Card.jsx";
+import RichText from "/src/components/ui/RichText.jsx";
+import SectionBadge from "/src/components/ui/SectionBadge.jsx";
+const valueIcons = [BadgeCheck, HeartHandshake, Layers3];
+export default function AboutSection({ data }) {
+  return /* @__PURE__ */ jsxDEV("section", { className: "about-section section", children: /* @__PURE__ */ jsxDEV(Container, { children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "about-intro", children: [
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV(SectionBadge, { children: data.badge }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 15,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("h2", { className: "section-title", children: /* @__PURE__ */ jsxDEV(RichText, { parts: data.title }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 17,
+          columnNumber: 15
+        }, this) }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 16,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+        lineNumber: 14,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { children: data.intro }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+        lineNumber: 20,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+      lineNumber: 13,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "about-main", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "about-story", children: data.story.map((paragraph) => /* @__PURE__ */ jsxDEV("p", { children: paragraph }, paragraph, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+        lineNumber: 26,
+        columnNumber: 15
+      }, this)) }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+        lineNumber: 24,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "about-visual", "aria-label": "KREATIV design system", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "about-mark", children: [
+          /* @__PURE__ */ jsxDEV("span", { children: "K" }, void 0, false, {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+            lineNumber: 32,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("strong", { children: "KREATIV" }, void 0, false, {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+            lineNumber: 33,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 31,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "about-ruler about-ruler-x" }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 35,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "about-ruler about-ruler-y" }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 36,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "about-floating about-floating-1", children: "Brand" }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 37,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "about-floating about-floating-2", children: "Social" }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 38,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "about-floating about-floating-3", children: "Print" }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 39,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+        lineNumber: 30,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+      lineNumber: 23,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "about-stats", children: data.stats.map((stat) => /* @__PURE__ */ jsxDEV(Card, { className: "about-stat", children: [
+      /* @__PURE__ */ jsxDEV("strong", { children: stat.value }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+        lineNumber: 46,
+        columnNumber: 15
+      }, this),
+      /* @__PURE__ */ jsxDEV("span", { children: stat.label }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+        lineNumber: 47,
+        columnNumber: 15
+      }, this)
+    ] }, stat.label, true, {
+      fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+      lineNumber: 45,
+      columnNumber: 13
+    }, this)) }, void 0, false, {
+      fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+      lineNumber: 43,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "about-values", children: data.values.map((value, index) => {
+      const Icon = valueIcons[index] || Brush;
+      return /* @__PURE__ */ jsxDEV(Card, { className: "about-value", style: { "--about-value": value.color }, children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "about-value-icon", children: /* @__PURE__ */ jsxDEV(Icon, { size: 18 }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 59,
+          columnNumber: 19
+        }, this) }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 58,
+          columnNumber: 17
+        }, this),
+        /* @__PURE__ */ jsxDEV("h3", { children: value.title }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 61,
+          columnNumber: 17
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { children: value.desc }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 62,
+          columnNumber: 17
+        }, this)
+      ] }, value.title, true, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+        lineNumber: 57,
+        columnNumber: 15
+      }, this);
+    }) }, void 0, false, {
+      fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+      lineNumber: 52,
+      columnNumber: 9
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "about-workflow", children: [
+      /* @__PURE__ */ jsxDEV("div", { children: [
+        /* @__PURE__ */ jsxDEV(SectionBadge, { children: "Workflow" }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 70,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("h2", { className: "section-title", children: "Cara kami menjaga project tetap jelas." }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 71,
+          columnNumber: 13
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+        lineNumber: 69,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ jsxDEV("ol", { children: data.workflow.map((item, index) => /* @__PURE__ */ jsxDEV("li", { children: [
+        /* @__PURE__ */ jsxDEV("span", { children: String(index + 1).padStart(2, "0") }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+          lineNumber: 76,
+          columnNumber: 17
+        }, this),
+        item
+      ] }, item, true, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+        lineNumber: 75,
+        columnNumber: 15
+      }, this)) }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+        lineNumber: 73,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+      lineNumber: 68,
+      columnNumber: 9
+    }, this)
+  ] }, void 0, true, {
+    fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+    lineNumber: 12,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/AboutSection.jsx",
+    lineNumber: 11,
+    columnNumber: 5
+  }, this);
+}
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkFib3V0U2VjdGlvbi5qc3giXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgQmFkZ2VDaGVjaywgQnJ1c2gsIEhlYXJ0SGFuZHNoYWtlLCBMYXllcnMzIH0gZnJvbSBcImx1Y2lkZS1yZWFjdFwiO1xuaW1wb3J0IENvbnRhaW5lciBmcm9tIFwiLi4vLi4vY29tcG9uZW50cy9jb21tb24vQ29udGFpbmVyXCI7XG5pbXBvcnQgQ2FyZCBmcm9tIFwiLi4vLi4vY29tcG9uZW50cy91aS9DYXJkXCI7XG5pbXBvcnQgUmljaFRleHQgZnJvbSBcIi4uLy4uL2NvbXBvbmVudHMvdWkvUmljaFRleHRcIjtcbmltcG9ydCBTZWN0aW9uQmFkZ2UgZnJvbSBcIi4uLy4uL2NvbXBvbmVudHMvdWkvU2VjdGlvbkJhZGdlXCI7XG5cbmNvbnN0IHZhbHVlSWNvbnMgPSBbQmFkZ2VDaGVjaywgSGVhcnRIYW5kc2hha2UsIExheWVyczNdO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBBYm91dFNlY3Rpb24oeyBkYXRhIH0pIHtcbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJhYm91dC1zZWN0aW9uIHNlY3Rpb25cIj5cbiAgICAgIDxDb250YWluZXI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJvdXQtaW50cm9cIj5cbiAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgPFNlY3Rpb25CYWRnZT57ZGF0YS5iYWRnZX08L1NlY3Rpb25CYWRnZT5cbiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJzZWN0aW9uLXRpdGxlXCI+XG4gICAgICAgICAgICAgIDxSaWNoVGV4dCBwYXJ0cz17ZGF0YS50aXRsZX0gLz5cbiAgICAgICAgICAgIDwvaDI+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgPHA+e2RhdGEuaW50cm99PC9wPlxuICAgICAgICA8L2Rpdj5cblxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFib3V0LW1haW5cIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFib3V0LXN0b3J5XCI+XG4gICAgICAgICAgICB7ZGF0YS5zdG9yeS5tYXAoKHBhcmFncmFwaCkgPT4gKFxuICAgICAgICAgICAgICA8cCBrZXk9e3BhcmFncmFwaH0+e3BhcmFncmFwaH08L3A+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJvdXQtdmlzdWFsXCIgYXJpYS1sYWJlbD1cIktSRUFUSVYgZGVzaWduIHN5c3RlbVwiPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYm91dC1tYXJrXCI+XG4gICAgICAgICAgICAgIDxzcGFuPks8L3NwYW4+XG4gICAgICAgICAgICAgIDxzdHJvbmc+S1JFQVRJVjwvc3Ryb25nPlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFib3V0LXJ1bGVyIGFib3V0LXJ1bGVyLXhcIiAvPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYm91dC1ydWxlciBhYm91dC1ydWxlci15XCIgLz5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJvdXQtZmxvYXRpbmcgYWJvdXQtZmxvYXRpbmctMVwiPkJyYW5kPC9kaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFib3V0LWZsb2F0aW5nIGFib3V0LWZsb2F0aW5nLTJcIj5Tb2NpYWw8L2Rpdj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJvdXQtZmxvYXRpbmcgYWJvdXQtZmxvYXRpbmctM1wiPlByaW50PC9kaXY+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJvdXQtc3RhdHNcIj5cbiAgICAgICAgICB7ZGF0YS5zdGF0cy5tYXAoKHN0YXQpID0+IChcbiAgICAgICAgICAgIDxDYXJkIGtleT17c3RhdC5sYWJlbH0gY2xhc3NOYW1lPVwiYWJvdXQtc3RhdFwiPlxuICAgICAgICAgICAgICA8c3Ryb25nPntzdGF0LnZhbHVlfTwvc3Ryb25nPlxuICAgICAgICAgICAgICA8c3Bhbj57c3RhdC5sYWJlbH08L3NwYW4+XG4gICAgICAgICAgICA8L0NhcmQ+XG4gICAgICAgICAgKSl9XG4gICAgICAgIDwvZGl2PlxuXG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJvdXQtdmFsdWVzXCI+XG4gICAgICAgICAge2RhdGEudmFsdWVzLm1hcCgodmFsdWUsIGluZGV4KSA9PiB7XG4gICAgICAgICAgICBjb25zdCBJY29uID0gdmFsdWVJY29uc1tpbmRleF0gfHwgQnJ1c2g7XG5cbiAgICAgICAgICAgIHJldHVybiAoXG4gICAgICAgICAgICAgIDxDYXJkIGtleT17dmFsdWUudGl0bGV9IGNsYXNzTmFtZT1cImFib3V0LXZhbHVlXCIgc3R5bGU9e3sgXCItLWFib3V0LXZhbHVlXCI6IHZhbHVlLmNvbG9yIH19PlxuICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYWJvdXQtdmFsdWUtaWNvblwiPlxuICAgICAgICAgICAgICAgICAgPEljb24gc2l6ZT17MTh9IC8+XG4gICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgPGgzPnt2YWx1ZS50aXRsZX08L2gzPlxuICAgICAgICAgICAgICAgIDxwPnt2YWx1ZS5kZXNjfTwvcD5cbiAgICAgICAgICAgICAgPC9DYXJkPlxuICAgICAgICAgICAgKTtcbiAgICAgICAgICB9KX1cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhYm91dC13b3JrZmxvd1wiPlxuICAgICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8U2VjdGlvbkJhZGdlPldvcmtmbG93PC9TZWN0aW9uQmFkZ2U+XG4gICAgICAgICAgICA8aDIgY2xhc3NOYW1lPVwic2VjdGlvbi10aXRsZVwiPkNhcmEga2FtaSBtZW5qYWdhIHByb2plY3QgdGV0YXAgamVsYXMuPC9oMj5cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICA8b2w+XG4gICAgICAgICAgICB7ZGF0YS53b3JrZmxvdy5tYXAoKGl0ZW0sIGluZGV4KSA9PiAoXG4gICAgICAgICAgICAgIDxsaSBrZXk9e2l0ZW19PlxuICAgICAgICAgICAgICAgIDxzcGFuPntTdHJpbmcoaW5kZXggKyAxKS5wYWRTdGFydCgyLCBcIjBcIil9PC9zcGFuPlxuICAgICAgICAgICAgICAgIHtpdGVtfVxuICAgICAgICAgICAgICA8L2xpPlxuICAgICAgICAgICAgKSl9XG4gICAgICAgICAgPC9vbD5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L0NvbnRhaW5lcj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG4iXSwibWFwcGluZ3MiOiJBQWNZO0FBZFosU0FBUyxZQUFZLE9BQU8sZ0JBQWdCLGVBQWU7QUFDM0QsT0FBTyxlQUFlO0FBQ3RCLE9BQU8sVUFBVTtBQUNqQixPQUFPLGNBQWM7QUFDckIsT0FBTyxrQkFBa0I7QUFFekIsTUFBTSxhQUFhLENBQUMsWUFBWSxnQkFBZ0IsT0FBTztBQUV2RCx3QkFBd0IsYUFBYSxFQUFFLEtBQUssR0FBRztBQUM3QyxTQUNFLHVCQUFDLGFBQVEsV0FBVSx5QkFDakIsaUNBQUMsYUFDQztBQUFBLDJCQUFDLFNBQUksV0FBVSxlQUNiO0FBQUEsNkJBQUMsU0FDQztBQUFBLCtCQUFDLGdCQUFjLGVBQUssU0FBcEI7QUFBQTtBQUFBO0FBQUE7QUFBQSxlQUEwQjtBQUFBLFFBQzFCLHVCQUFDLFFBQUcsV0FBVSxpQkFDWixpQ0FBQyxZQUFTLE9BQU8sS0FBSyxTQUF0QjtBQUFBO0FBQUE7QUFBQTtBQUFBLGVBQTZCLEtBRC9CO0FBQUE7QUFBQTtBQUFBO0FBQUEsZUFFQTtBQUFBLFdBSkY7QUFBQTtBQUFBO0FBQUE7QUFBQSxhQUtBO0FBQUEsTUFDQSx1QkFBQyxPQUFHLGVBQUssU0FBVDtBQUFBO0FBQUE7QUFBQTtBQUFBLGFBQWU7QUFBQSxTQVBqQjtBQUFBO0FBQUE7QUFBQTtBQUFBLFdBUUE7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

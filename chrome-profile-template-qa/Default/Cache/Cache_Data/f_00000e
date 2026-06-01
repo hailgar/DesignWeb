@@ -1,0 +1,205 @@
+import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=4cb269bc"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import { ArrowRight, Mail, MapPin, MessageCircle } from "/node_modules/.vite/deps/lucide-react.js?v=4cb269bc";
+import Container from "/src/components/common/Container.jsx";
+import Card from "/src/components/ui/Card.jsx";
+import RichText from "/src/components/ui/RichText.jsx";
+import SectionBadge from "/src/components/ui/SectionBadge.jsx";
+function ContactIcon({ label }) {
+  if (label === "WhatsApp") return /* @__PURE__ */ jsxDEV(MessageCircle, { size: 18 }, void 0, false, {
+    fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+    lineNumber: 8,
+    columnNumber: 36
+  }, this);
+  if (label === "Email") return /* @__PURE__ */ jsxDEV(Mail, { size: 18 }, void 0, false, {
+    fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+    lineNumber: 9,
+    columnNumber: 33
+  }, this);
+  return /* @__PURE__ */ jsxDEV(MapPin, { size: 18 }, void 0, false, {
+    fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+    lineNumber: 10,
+    columnNumber: 10
+  }, this);
+}
+export default function ContactBriefSection({ data }) {
+  return /* @__PURE__ */ jsxDEV("section", { className: "contact-brief section", id: "brief", children: /* @__PURE__ */ jsxDEV(Container, { children: /* @__PURE__ */ jsxDEV("div", { className: "contact-brief-inner", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "contact-copy", children: [
+      /* @__PURE__ */ jsxDEV(SectionBadge, { children: data.badge }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+        lineNumber: 19,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("h2", { className: "section-title", children: /* @__PURE__ */ jsxDEV(RichText, { parts: data.title }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+        lineNumber: 21,
+        columnNumber: 15
+      }, this) }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+        lineNumber: 20,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("p", { className: "section-sub", children: data.description }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+        lineNumber: 23,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "contact-cards", children: data.cards.map((card) => /* @__PURE__ */ jsxDEV(
+        Card,
+        {
+          as: "a",
+          href: card.href,
+          className: "contact-card",
+          style: { "--contact": card.color },
+          children: [
+            /* @__PURE__ */ jsxDEV("span", { className: "contact-card-icon", children: /* @__PURE__ */ jsxDEV(ContactIcon, { label: card.label }, void 0, false, {
+              fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+              lineNumber: 35,
+              columnNumber: 21
+            }, this) }, void 0, false, {
+              fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+              lineNumber: 34,
+              columnNumber: 19
+            }, this),
+            /* @__PURE__ */ jsxDEV("span", { children: [
+              /* @__PURE__ */ jsxDEV("small", { children: card.label }, void 0, false, {
+                fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+                lineNumber: 38,
+                columnNumber: 21
+              }, this),
+              /* @__PURE__ */ jsxDEV("strong", { children: card.value }, void 0, false, {
+                fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+                lineNumber: 39,
+                columnNumber: 21
+              }, this)
+            ] }, void 0, true, {
+              fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+              lineNumber: 37,
+              columnNumber: 19
+            }, this)
+          ]
+        },
+        card.label,
+        true,
+        {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+          lineNumber: 27,
+          columnNumber: 17
+        },
+        this
+      )) }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+        lineNumber: 25,
+        columnNumber: 13
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+      lineNumber: 18,
+      columnNumber: 11
+    }, this),
+    /* @__PURE__ */ jsxDEV(Card, { as: "form", className: "brief-form", onSubmit: (event) => event.preventDefault(), children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "brief-form-top", children: [
+        /* @__PURE__ */ jsxDEV("span", { children: "01" }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+          lineNumber: 48,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { children: "Brief awal" }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+          lineNumber: 49,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+        lineNumber: 47,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("label", { children: [
+        "Nama bisnis",
+        /* @__PURE__ */ jsxDEV("input", { type: "text", placeholder: "Contoh: Kopi Jalan Senja" }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+          lineNumber: 54,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+        lineNumber: 52,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("label", { children: [
+        "Layanan yang dibutuhkan",
+        /* @__PURE__ */ jsxDEV("select", { defaultValue: "", children: [
+          /* @__PURE__ */ jsxDEV("option", { value: "", disabled: true, children: "Pilih layanan" }, void 0, false, {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+            lineNumber: 60,
+            columnNumber: 17
+          }, this),
+          data.services.map((service) => /* @__PURE__ */ jsxDEV("option", { value: service, children: service }, service, false, {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+            lineNumber: 64,
+            columnNumber: 19
+          }, this))
+        ] }, void 0, true, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+          lineNumber: 59,
+          columnNumber: 15
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+        lineNumber: 57,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("label", { children: [
+        "Kebutuhan singkat",
+        /* @__PURE__ */ jsxDEV(
+          "textarea",
+          {
+            rows: "5",
+            placeholder: "Ceritakan target customer, deadline, referensi, atau channel yang akan dipakai."
+          },
+          void 0,
+          false,
+          {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+            lineNumber: 73,
+            columnNumber: 15
+          },
+          this
+        )
+      ] }, void 0, true, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+        lineNumber: 71,
+        columnNumber: 13
+      }, this),
+      /* @__PURE__ */ jsxDEV("a", { className: "brief-submit", href: data.whatsappHref, children: [
+        "Lanjut diskusi di WhatsApp ",
+        /* @__PURE__ */ jsxDEV(ArrowRight, { size: 16 }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+          lineNumber: 80,
+          columnNumber: 42
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+        lineNumber: 79,
+        columnNumber: 13
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+      lineNumber: 46,
+      columnNumber: 11
+    }, this)
+  ] }, void 0, true, {
+    fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+    lineNumber: 17,
+    columnNumber: 9
+  }, this) }, void 0, false, {
+    fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+    lineNumber: 16,
+    columnNumber: 7
+  }, this) }, void 0, false, {
+    fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/ContactBriefSection.jsx",
+    lineNumber: 15,
+    columnNumber: 5
+  }, this);
+}
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbnRhY3RCcmllZlNlY3Rpb24uanN4Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEFycm93UmlnaHQsIE1haWwsIE1hcFBpbiwgTWVzc2FnZUNpcmNsZSB9IGZyb20gXCJsdWNpZGUtcmVhY3RcIjtcbmltcG9ydCBDb250YWluZXIgZnJvbSBcIi4uLy4uL2NvbXBvbmVudHMvY29tbW9uL0NvbnRhaW5lclwiO1xuaW1wb3J0IENhcmQgZnJvbSBcIi4uLy4uL2NvbXBvbmVudHMvdWkvQ2FyZFwiO1xuaW1wb3J0IFJpY2hUZXh0IGZyb20gXCIuLi8uLi9jb21wb25lbnRzL3VpL1JpY2hUZXh0XCI7XG5pbXBvcnQgU2VjdGlvbkJhZGdlIGZyb20gXCIuLi8uLi9jb21wb25lbnRzL3VpL1NlY3Rpb25CYWRnZVwiO1xuXG5mdW5jdGlvbiBDb250YWN0SWNvbih7IGxhYmVsIH0pIHtcbiAgaWYgKGxhYmVsID09PSBcIldoYXRzQXBwXCIpIHJldHVybiA8TWVzc2FnZUNpcmNsZSBzaXplPXsxOH0gLz47XG4gIGlmIChsYWJlbCA9PT0gXCJFbWFpbFwiKSByZXR1cm4gPE1haWwgc2l6ZT17MTh9IC8+O1xuICByZXR1cm4gPE1hcFBpbiBzaXplPXsxOH0gLz47XG59XG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIENvbnRhY3RCcmllZlNlY3Rpb24oeyBkYXRhIH0pIHtcbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJjb250YWN0LWJyaWVmIHNlY3Rpb25cIiBpZD1cImJyaWVmXCI+XG4gICAgICA8Q29udGFpbmVyPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhY3QtYnJpZWYtaW5uZXJcIj5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRhY3QtY29weVwiPlxuICAgICAgICAgICAgPFNlY3Rpb25CYWRnZT57ZGF0YS5iYWRnZX08L1NlY3Rpb25CYWRnZT5cbiAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJzZWN0aW9uLXRpdGxlXCI+XG4gICAgICAgICAgICAgIDxSaWNoVGV4dCBwYXJ0cz17ZGF0YS50aXRsZX0gLz5cbiAgICAgICAgICAgIDwvaDI+XG4gICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJzZWN0aW9uLXN1YlwiPntkYXRhLmRlc2NyaXB0aW9ufTwvcD5cblxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjb250YWN0LWNhcmRzXCI+XG4gICAgICAgICAgICAgIHtkYXRhLmNhcmRzLm1hcCgoY2FyZCkgPT4gKFxuICAgICAgICAgICAgICAgIDxDYXJkXG4gICAgICAgICAgICAgICAgICBrZXk9e2NhcmQubGFiZWx9XG4gICAgICAgICAgICAgICAgICBhcz1cImFcIlxuICAgICAgICAgICAgICAgICAgaHJlZj17Y2FyZC5ocmVmfVxuICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPVwiY29udGFjdC1jYXJkXCJcbiAgICAgICAgICAgICAgICAgIHN0eWxlPXt7IFwiLS1jb250YWN0XCI6IGNhcmQuY29sb3IgfX1cbiAgICAgICAgICAgICAgICA+XG4gICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJjb250YWN0LWNhcmQtaWNvblwiPlxuICAgICAgICAgICAgICAgICAgICA8Q29udGFjdEljb24gbGFiZWw9e2NhcmQubGFiZWx9IC8+XG4gICAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgICA8c3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgPHNtYWxsPntjYXJkLmxhYmVsfTwvc21hbGw+XG4gICAgICAgICAgICAgICAgICAgIDxzdHJvbmc+e2NhcmQudmFsdWV9PC9zdHJvbmc+XG4gICAgICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICAgICAgPC9DYXJkPlxuICAgICAgICAgICAgICApKX1cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgPENhcmQgYXM9XCJmb3JtXCIgY2xhc3NOYW1lPVwiYnJpZWYtZm9ybVwiIG9uU3VibWl0PXsoZXZlbnQpID0+IGV2ZW50LnByZXZlbnREZWZhdWx0KCl9PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJicmllZi1mb3JtLXRvcFwiPlxuICAgICAgICAgICAgICA8c3Bhbj4wMTwvc3Bhbj5cbiAgICAgICAgICAgICAgPHA+QnJpZWYgYXdhbDwvcD5cbiAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICA8bGFiZWw+XG4gICAgICAgICAgICAgIE5hbWEgYmlzbmlzXG4gICAgICAgICAgICAgIDxpbnB1dCB0eXBlPVwidGV4dFwiIHBsYWNlaG9sZGVyPVwiQ29udG9oOiBLb3BpIEphbGFuIFNlbmphXCIgLz5cbiAgICAgICAgICAgIDwvbGFiZWw+XG5cbiAgICAgICAgICAgIDxsYWJlbD5cbiAgICAgICAgICAgICAgTGF5YW5hbiB5YW5nIGRpYnV0dWhrYW5cbiAgICAgICAgICAgICAgPHNlbGVjdCBkZWZhdWx0VmFsdWU9XCJcIj5cbiAgICAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPVwiXCIgZGlzYWJsZWQ+XG4gICAgICAgICAgICAgICAgICBQaWxpaCBsYXlhbmFuXG4gICAgICAgICAgICAgICAgPC9vcHRpb24+XG4gICAgICAgICAgICAgICAge2RhdGEuc2VydmljZXMubWFwKChzZXJ2aWNlKSA9PiAoXG4gICAgICAgICAgICAgICAgICA8b3B0aW9uIGtleT17c2VydmljZX0gdmFsdWU9e3NlcnZpY2V9PlxuICAgICAgICAgICAgICAgICAgICB7c2VydmljZX1cbiAgICAgICAgICAgICAgICAgIDwvb3B0aW9uPlxuICAgICAgICAgICAgICAgICkpfVxuICAgICAgICAgICAgICA8L3NlbGVjdD5cbiAgICAgICAgICAgIDwvbGFiZWw+XG5cbiAgICAgICAgICAgIDxsYWJlbD5cbiAgICAgICAgICAgICAgS2VidXR1aGFuIHNpbmdrYXRcbiAgICAgICAgICAgICAgPHRleHRhcmVhXG4gICAgICAgICAgICAgICAgcm93cz1cIjVcIlxuICAgICAgICAgICAgICAgIHBsYWNlaG9sZGVyPVwiQ2VyaXRha2FuIHRhcmdldCBjdXN0b21lciwgZGVhZGxpbmUsIHJlZmVyZW5zaSwgYXRhdSBjaGFubmVsIHlhbmcgYWthbiBkaXBha2FpLlwiXG4gICAgICAgICAgICAgIC8+XG4gICAgICAgICAgICA8L2xhYmVsPlxuXG4gICAgICAgICAgICA8YSBjbGFzc05hbWU9XCJicmllZi1zdWJtaXRcIiBocmVmPXtkYXRhLndoYXRzYXBwSHJlZn0+XG4gICAgICAgICAgICAgIExhbmp1dCBkaXNrdXNpIGRpIFdoYXRzQXBwIDxBcnJvd1JpZ2h0IHNpemU9ezE2fSAvPlxuICAgICAgICAgICAgPC9hPlxuICAgICAgICAgIDwvQ2FyZD5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L0NvbnRhaW5lcj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG4iXSwibWFwcGluZ3MiOiJBQU9tQztBQVBuQyxTQUFTLFlBQVksTUFBTSxRQUFRLHFCQUFxQjtBQUN4RCxPQUFPLGVBQWU7QUFDdEIsT0FBTyxVQUFVO0FBQ2pCLE9BQU8sY0FBYztBQUNyQixPQUFPLGtCQUFrQjtBQUV6QixTQUFTLFlBQVksRUFBRSxNQUFNLEdBQUc7QUFDOUIsTUFBSSxVQUFVLFdBQVksUUFBTyx1QkFBQyxpQkFBYyxNQUFNLE1BQXJCO0FBQUE7QUFBQTtBQUFBO0FBQUEsU0FBeUI7QUFDMUQsTUFBSSxVQUFVLFFBQVMsUUFBTyx1QkFBQyxRQUFLLE1BQU0sTUFBWjtBQUFBO0FBQUE7QUFBQTtBQUFBLFNBQWdCO0FBQzlDLFNBQU8sdUJBQUMsVUFBTyxNQUFNLE1BQWQ7QUFBQTtBQUFBO0FBQUE7QUFBQSxTQUFrQjtBQUMzQjtBQUVBLHdCQUF3QixvQkFBb0IsRUFBRSxLQUFLLEdBQUc7QUFDcEQsU0FDRSx1QkFBQyxhQUFRLFdBQVUseUJBQXdCLElBQUcsU0FDNUMsaUNBQUMsYUFDQyxpQ0FBQyxTQUFJLFdBQVUsdUJBQ2I7QUFBQSwyQkFBQyxTQUFJLFdBQVUsZ0JBQ2I7QUFBQSw2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

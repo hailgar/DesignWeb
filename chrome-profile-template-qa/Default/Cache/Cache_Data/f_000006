@@ -1,0 +1,240 @@
+import __vite__cjsImport0_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=4cb269bc"; const jsxDEV = __vite__cjsImport0_react_jsxDevRuntime["jsxDEV"];
+import { ArrowRight } from "/node_modules/.vite/deps/lucide-react.js?v=4cb269bc";
+import Container from "/src/components/common/Container.jsx";
+import Button from "/src/components/ui/Button.jsx";
+import DecorativeShape from "/src/components/ui/DecorativeShape.jsx";
+function HeroActionIcon({ icon }) {
+  if (icon === "arrow-right") {
+    return /* @__PURE__ */ jsxDEV(ArrowRight, { size: 17 }, void 0, false, {
+      fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+      lineNumber: 8,
+      columnNumber: 12
+    }, this);
+  }
+  return null;
+}
+export default function HeroSection({ data }) {
+  return /* @__PURE__ */ jsxDEV("section", { className: "hero", id: "hero", children: [
+    /* @__PURE__ */ jsxDEV("div", { className: "hero-bg", children: [
+      /* @__PURE__ */ jsxDEV(DecorativeShape, { className: "blob blob-1" }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+        lineNumber: 18,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(DecorativeShape, { className: "blob blob-2" }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+        lineNumber: 19,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(DecorativeShape, { className: "blob blob-3" }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+        lineNumber: 20,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV(DecorativeShape, { className: "dot-grid" }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+        lineNumber: 21,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+      lineNumber: 17,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV(Container, { className: "hero-inner", children: [
+      /* @__PURE__ */ jsxDEV("div", { className: "hero-content", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "hero-badge", children: [
+          /* @__PURE__ */ jsxDEV("span", { className: "badge-dot" }, void 0, false, {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+            lineNumber: 27,
+            columnNumber: 13
+          }, this),
+          data.badge
+        ] }, void 0, true, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+          lineNumber: 26,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("h1", { className: "hero-headline", children: data.headline.map((line, index) => /* @__PURE__ */ jsxDEV(
+          "span",
+          {
+            className: `hl-line hl-${index} ${line.accent ? "hl-accent" : ""}`,
+            children: line.text
+          },
+          line.text,
+          false,
+          {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+            lineNumber: 33,
+            columnNumber: 15
+          },
+          this
+        )) }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+          lineNumber: 31,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("p", { className: "hero-sub", children: data.subheadline }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+          lineNumber: 42,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "hero-actions", children: data.ctas.map((cta) => /* @__PURE__ */ jsxDEV(Button, { href: cta.href, variant: cta.variant, size: "lg", children: [
+          cta.label,
+          " ",
+          /* @__PURE__ */ jsxDEV(HeroActionIcon, { icon: cta.icon }, void 0, false, {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+            lineNumber: 47,
+            columnNumber: 29
+          }, this)
+        ] }, cta.label, true, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+          lineNumber: 46,
+          columnNumber: 15
+        }, this)) }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+          lineNumber: 44,
+          columnNumber: 11
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "hero-stats", children: data.stats.map((stat) => /* @__PURE__ */ jsxDEV("div", { className: "stat-item", children: [
+          /* @__PURE__ */ jsxDEV("strong", { children: stat.value }, void 0, false, {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+            lineNumber: 55,
+            columnNumber: 17
+          }, this),
+          /* @__PURE__ */ jsxDEV("span", { children: stat.label }, void 0, false, {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+            lineNumber: 56,
+            columnNumber: 17
+          }, this)
+        ] }, stat.label, true, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+          lineNumber: 54,
+          columnNumber: 15
+        }, this)) }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+          lineNumber: 52,
+          columnNumber: 11
+        }, this)
+      ] }, void 0, true, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+        lineNumber: 25,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "hero-visual", children: /* @__PURE__ */ jsxDEV("div", { className: "canvas-mock", children: [
+        /* @__PURE__ */ jsxDEV("div", { className: "canvas-grid-bg" }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+          lineNumber: 64,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "canvas-artwork", children: [
+          /* @__PURE__ */ jsxDEV("div", { className: "artwork-ring ring-outer" }, void 0, false, {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+            lineNumber: 66,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "artwork-ring ring-inner" }, void 0, false, {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+            lineNumber: 67,
+            columnNumber: 15
+          }, this),
+          /* @__PURE__ */ jsxDEV("div", { className: "artwork-core", children: [
+            /* @__PURE__ */ jsxDEV("span", { className: "core-symbol", children: data.canvas.core.symbol }, void 0, false, {
+              fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+              lineNumber: 69,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("span", { className: "core-name", children: data.canvas.core.name }, void 0, false, {
+              fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+              lineNumber: 70,
+              columnNumber: 17
+            }, this),
+            /* @__PURE__ */ jsxDEV("span", { className: "core-sub", children: data.canvas.core.subtitle }, void 0, false, {
+              fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+              lineNumber: 71,
+              columnNumber: 17
+            }, this)
+          ] }, void 0, true, {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+            lineNumber: 68,
+            columnNumber: 15
+          }, this)
+        ] }, void 0, true, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+          lineNumber: 65,
+          columnNumber: 13
+        }, this),
+        /* @__PURE__ */ jsxDEV("div", { className: "canvas-swatches", children: data.canvas.swatches.map((color) => /* @__PURE__ */ jsxDEV("div", { className: "swatch", style: { background: color } }, color, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+          lineNumber: 76,
+          columnNumber: 17
+        }, this)) }, void 0, false, {
+          fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+          lineNumber: 74,
+          columnNumber: 13
+        }, this),
+        data.canvas.floatingCards.map((card, index) => /* @__PURE__ */ jsxDEV(
+          "div",
+          {
+            className: `float-card float-card-${index}`,
+            style: { "--card-color": card.color },
+            children: [
+              /* @__PURE__ */ jsxDEV("span", { className: "float-sym", children: card.symbol }, void 0, false, {
+                fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+                lineNumber: 85,
+                columnNumber: 17
+              }, this),
+              /* @__PURE__ */ jsxDEV("span", { className: "float-lbl", children: card.label }, void 0, false, {
+                fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+                lineNumber: 86,
+                columnNumber: 17
+              }, this)
+            ]
+          },
+          card.label,
+          true,
+          {
+            fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+            lineNumber: 80,
+            columnNumber: 15
+          },
+          this
+        ))
+      ] }, void 0, true, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+        lineNumber: 63,
+        columnNumber: 11
+      }, this) }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+        lineNumber: 62,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+      lineNumber: 24,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ jsxDEV("div", { className: "hero-scroll", children: [
+      /* @__PURE__ */ jsxDEV("span", { children: data.scrollLabel }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+        lineNumber: 94,
+        columnNumber: 9
+      }, this),
+      /* @__PURE__ */ jsxDEV("div", { className: "scroll-bar" }, void 0, false, {
+        fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+        lineNumber: 95,
+        columnNumber: 9
+      }, this)
+    ] }, void 0, true, {
+      fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+      lineNumber: 93,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, true, {
+    fileName: "E:/workstuff/Project/Template/Design-web/src/sections/graphic-design/HeroSection.jsx",
+    lineNumber: 16,
+    columnNumber: 5
+  }, this);
+}
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkhlcm9TZWN0aW9uLmpzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBBcnJvd1JpZ2h0IH0gZnJvbSBcImx1Y2lkZS1yZWFjdFwiO1xuaW1wb3J0IENvbnRhaW5lciBmcm9tIFwiLi4vLi4vY29tcG9uZW50cy9jb21tb24vQ29udGFpbmVyXCI7XG5pbXBvcnQgQnV0dG9uIGZyb20gXCIuLi8uLi9jb21wb25lbnRzL3VpL0J1dHRvblwiO1xuaW1wb3J0IERlY29yYXRpdmVTaGFwZSBmcm9tIFwiLi4vLi4vY29tcG9uZW50cy91aS9EZWNvcmF0aXZlU2hhcGVcIjtcblxuZnVuY3Rpb24gSGVyb0FjdGlvbkljb24oeyBpY29uIH0pIHtcbiAgaWYgKGljb24gPT09IFwiYXJyb3ctcmlnaHRcIikge1xuICAgIHJldHVybiA8QXJyb3dSaWdodCBzaXplPXsxN30gLz47XG4gIH1cblxuICByZXR1cm4gbnVsbDtcbn1cblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSGVyb1NlY3Rpb24oeyBkYXRhIH0pIHtcbiAgcmV0dXJuIChcbiAgICA8c2VjdGlvbiBjbGFzc05hbWU9XCJoZXJvXCIgaWQ9XCJoZXJvXCI+XG4gICAgICA8ZGl2IGNsYXNzTmFtZT1cImhlcm8tYmdcIj5cbiAgICAgICAgPERlY29yYXRpdmVTaGFwZSBjbGFzc05hbWU9XCJibG9iIGJsb2ItMVwiIC8+XG4gICAgICAgIDxEZWNvcmF0aXZlU2hhcGUgY2xhc3NOYW1lPVwiYmxvYiBibG9iLTJcIiAvPlxuICAgICAgICA8RGVjb3JhdGl2ZVNoYXBlIGNsYXNzTmFtZT1cImJsb2IgYmxvYi0zXCIgLz5cbiAgICAgICAgPERlY29yYXRpdmVTaGFwZSBjbGFzc05hbWU9XCJkb3QtZ3JpZFwiIC8+XG4gICAgICA8L2Rpdj5cblxuICAgICAgPENvbnRhaW5lciBjbGFzc05hbWU9XCJoZXJvLWlubmVyXCI+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVyby1jb250ZW50XCI+XG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJoZXJvLWJhZGdlXCI+XG4gICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJiYWRnZS1kb3RcIiAvPlxuICAgICAgICAgICAge2RhdGEuYmFkZ2V9XG4gICAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgICA8aDEgY2xhc3NOYW1lPVwiaGVyby1oZWFkbGluZVwiPlxuICAgICAgICAgICAge2RhdGEuaGVhZGxpbmUubWFwKChsaW5lLCBpbmRleCkgPT4gKFxuICAgICAgICAgICAgICA8c3BhblxuICAgICAgICAgICAgICAgIGtleT17bGluZS50ZXh0fVxuICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17YGhsLWxpbmUgaGwtJHtpbmRleH0gJHtsaW5lLmFjY2VudCA/IFwiaGwtYWNjZW50XCIgOiBcIlwifWB9XG4gICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICB7bGluZS50ZXh0fVxuICAgICAgICAgICAgICA8L3NwYW4+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2gxPlxuXG4gICAgICAgICAgPHAgY2xhc3NOYW1lPVwiaGVyby1zdWJcIj57ZGF0YS5zdWJoZWFkbGluZX08L3A+XG5cbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImhlcm8tYWN0aW9uc1wiPlxuICAgICAgICAgICAge2RhdGEuY3Rhcy5tYXAoKGN0YSkgPT4gKFxuICAgICAgICAgICAgICA8QnV0dG9uIGtleT17Y3RhLmxhYmVsfSBocmVmPXtjdGEuaHJlZn0gdmFyaWFudD17Y3RhLnZhcmlhbnR9IHNpemU9XCJsZ1wiPlxuICAgICAgICAgICAgICAgIHtjdGEubGFiZWx9IDxIZXJvQWN0aW9uSWNvbiBpY29uPXtjdGEuaWNvbn0gLz5cbiAgICAgICAgICAgICAgPC9CdXR0b24+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiaGVyby1zdGF0c1wiPlxuICAgICAgICAgICAge2RhdGEuc3RhdHMubWFwKChzdGF0KSA9PiAoXG4gICAgICAgICAgICAgIDxkaXYga2V5PXtzdGF0LmxhYmVsfSBjbGFzc05hbWU9XCJzdGF0LWl0ZW1cIj5cbiAgICAgICAgICAgICAgICA8c3Ryb25nPntzdGF0LnZhbHVlfTwvc3Ryb25nPlxuICAgICAgICAgICAgICAgIDxzcGFuPntzdGF0LmxhYmVsfTwvc3Bhbj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJoZXJvLXZpc3VhbFwiPlxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY2FudmFzLW1vY2tcIj5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiY2FudmFzLWdyaWQtYmdcIiAvPlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjYW52YXMtYXJ0d29ya1wiPlxuICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImFydHdvcmstcmluZyByaW5nLW91dGVyXCIgLz5cbiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJhcnR3b3JrLXJpbmcgcmluZy1pbm5lclwiIC8+XG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYXJ0d29yay1jb3JlXCI+XG4gICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwiY29yZS1zeW1ib2xcIj57ZGF0YS5jYW52YXMuY29yZS5zeW1ib2x9PC9zcGFuPlxuICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImNvcmUtbmFtZVwiPntkYXRhLmNhbnZhcy5jb3JlLm5hbWV9PC9zcGFuPlxuICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImNvcmUtc3ViXCI+e2RhdGEuY2FudmFzLmNvcmUuc3VidGl0bGV9PC9zcGFuPlxuICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJjYW52YXMtc3dhdGNoZXNcIj5cbiAgICAgICAgICAgICAge2RhdGEuY2FudmFzLnN3YXRjaGVzLm1hcCgoY29sb3IpID0+IChcbiAgICAgICAgICAgICAgICA8ZGl2IGtleT17Y29sb3J9IGNsYXNzTmFtZT1cInN3YXRjaFwiIHN0eWxlPXt7IGJhY2tncm91bmQ6IGNvbG9yIH19IC8+XG4gICAgICAgICAgICAgICkpfVxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICB7ZGF0YS5jYW52YXMuZmxvYXRpbmdDYXJkcy5tYXAoKGNhcmQsIGluZGV4KSA9PiAoXG4gICAgICAgICAgICAgIDxkaXZcbiAgICAgICAgICAgICAgICBrZXk9e2NhcmQubGFiZWx9XG4gICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgZmxvYXQtY2FyZCBmbG9hdC1jYXJkLSR7aW5kZXh9YH1cbiAgICAgICAgICAgICAgICBzdHlsZT17eyBcIi0tY2FyZC1jb2xvclwiOiBjYXJkLmNvbG9yIH19XG4gICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJmbG9hdC1zeW1cIj57Y2FyZC5zeW1ib2x9PC9zcGFuPlxuICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cImZsb2F0LWxibFwiPntjYXJkLmxhYmVsfTwvc3Bhbj5cbiAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICApKX1cbiAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L0NvbnRhaW5lcj5cblxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJoZXJvLXNjcm9sbFwiPlxuICAgICAgICA8c3Bhbj57ZGF0YS5zY3JvbGxMYWJlbH08L3NwYW4+XG4gICAgICAgIDxkaXYgY2xhc3NOYW1lPVwic2Nyb2xsLWJhclwiIC8+XG4gICAgICA8L2Rpdj5cbiAgICA8L3NlY3Rpb24+XG4gICk7XG59XG4iXSwibWFwcGluZ3MiOiJBQU9XO0FBUFgsU0FBUyxrQkFBa0I7QUFDM0IsT0FBTyxl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
