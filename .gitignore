@@ -1,0 +1,12 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Local server logs
+*.log
+*.err
+
+# Browser QA profiles
+chrome-profile-*-qa/
