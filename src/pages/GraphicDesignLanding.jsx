@@ -1,21 +1,13 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import { useTheme } from "../context/ThemeContext";
 import { graphicDesignLandingData } from "../data/graphicDesignLandingData";
-import AboutSection from "./sections/AboutSection";
-import BrandStrip from "./sections/BrandStrip";
-import ContactBriefSection from "./sections/ContactBriefSection";
-import FAQSection from "./sections/FAQSection";
-import FinalCTA from "./sections/FinalCTA";
-import HeroSection from "./sections/HeroSection";
-import PageHeader from "./sections/PageHeader";
-import PortfolioSection from "./sections/PortfolioSection";
-import PricingSection from "./sections/PricingSection";
-import ProcessSection from "./sections/ProcessSection";
-import ServicesSection from "./sections/ServicesSection";
-import TestimonialsSection from "./sections/TestimonialsSection";
-import WhyChooseUs from "./sections/WhyChooseUs";
+import AboutPage from "./AboutPage";
+import ContactPage from "./ContactPage";
+import HomePage from "./HomePage";
+import PortfolioPage from "./PortfolioPage";
+import ServicesPage from "./ServicesPage";
 
 const routePages = {
   "/": "home",
@@ -82,80 +74,62 @@ export default function GraphicDesignLanding() {
     footerLinks,
   } = graphicDesignLandingData;
 
-  const homeServicesData = useMemo(
-    () => ({
-      ...servicesSectionData,
-      title: ["Layanan favorit ", { em: "untuk UMKM." }],
-      description: "Empat kebutuhan desain yang paling sering dipakai untuk mulai tampil profesional.",
-      services: servicesSectionData.services.slice(0, 4),
-    }),
-    [servicesSectionData],
-  );
-
-  const homePortfolioData = useMemo(
-    () => ({
-      ...portfolioSectionData,
-      title: ["Contoh visual ", { em: "siap jualan." }],
-      description: "Beberapa arah desain yang bisa dipakai sebagai referensi awal project kamu.",
-      items: portfolioSectionData.items.slice(0, 4),
-    }),
-    [portfolioSectionData],
-  );
-
   function renderActivePage() {
     if (activePage === "tentang") {
       return (
-        <>
-          <PageHeader data={pageHeaderData.tentang} />
-          <AboutSection data={aboutSectionData} />
-          <WhyChooseUs data={whyChooseUsData} />
-          <FinalCTA data={finalCtaData} />
-        </>
+        <AboutPage
+          pageHeaderData={pageHeaderData.tentang}
+          aboutSectionData={aboutSectionData}
+          whyChooseUsData={whyChooseUsData}
+          finalCtaData={finalCtaData}
+        />
       );
     }
 
     if (activePage === "layanan") {
       return (
-        <>
-          <PageHeader data={pageHeaderData.layanan} />
-          <ServicesSection data={servicesSectionData} />
-          <ProcessSection data={processSectionData} />
-          <PricingSection data={pricingSectionData} />
-          <FAQSection data={faqSectionData} site={siteConfig} />
-        </>
+        <ServicesPage
+          siteConfig={siteConfig}
+          pageHeaderData={pageHeaderData.layanan}
+          servicesSectionData={servicesSectionData}
+          processSectionData={processSectionData}
+          pricingSectionData={pricingSectionData}
+          faqSectionData={faqSectionData}
+        />
       );
     }
 
     if (activePage === "portfolio") {
       return (
-        <>
-          <PageHeader data={pageHeaderData.portfolio} />
-          <PortfolioSection data={portfolioSectionData} />
-          <TestimonialsSection data={testimonialsSectionData} />
-          <FinalCTA data={finalCtaData} />
-        </>
+        <PortfolioPage
+          pageHeaderData={pageHeaderData.portfolio}
+          portfolioSectionData={portfolioSectionData}
+          testimonialsSectionData={testimonialsSectionData}
+          finalCtaData={finalCtaData}
+        />
       );
     }
 
     if (activePage === "kontak") {
       return (
-        <>
-          <PageHeader data={pageHeaderData.kontak} />
-          <ContactBriefSection data={contactSectionData} />
-          <FAQSection data={faqSectionData} site={siteConfig} />
-        </>
+        <ContactPage
+          siteConfig={siteConfig}
+          pageHeaderData={pageHeaderData.kontak}
+          contactSectionData={contactSectionData}
+          faqSectionData={faqSectionData}
+        />
       );
     }
 
     return (
-      <>
-        <HeroSection data={heroData} />
-        <BrandStrip data={brandStripData} />
-        <ServicesSection data={homeServicesData} />
-        <WhyChooseUs data={whyChooseUsData} />
-        <PortfolioSection data={homePortfolioData} />
-        <FinalCTA data={finalCtaData} />
-      </>
+      <HomePage
+        heroData={heroData}
+        brandStripData={brandStripData}
+        servicesSectionData={servicesSectionData}
+        whyChooseUsData={whyChooseUsData}
+        portfolioSectionData={portfolioSectionData}
+        finalCtaData={finalCtaData}
+      />
     );
   }
 
