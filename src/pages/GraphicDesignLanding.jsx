@@ -1,26 +1,21 @@
 import { useEffect, useMemo, useState } from "react";
+import Footer from "../components/layout/Footer";
+import Header from "../components/layout/Header";
+import { useTheme } from "../context/ThemeContext";
 import { graphicDesignLandingData } from "../data/graphicDesignLandingData";
-import {
-  ACTIVE_COLOR_PRESET,
-  colorTemplateOptions,
-  getGraphicDesignThemeCss,
-} from "../config/graphicDesignTheme";
-import AboutSection from "../sections/graphic-design/AboutSection";
-import BrandStrip from "../sections/graphic-design/BrandStrip";
-import ContactBriefSection from "../sections/graphic-design/ContactBriefSection";
-import FAQSection from "../sections/graphic-design/FAQSection";
-import FinalCTA from "../sections/graphic-design/FinalCTA";
-import Footer from "../sections/graphic-design/Footer";
-import HeroSection from "../sections/graphic-design/HeroSection";
-import Navbar from "../sections/graphic-design/Navbar";
-import PageHeader from "../sections/graphic-design/PageHeader";
-import PortfolioSection from "../sections/graphic-design/PortfolioSection";
-import PricingSection from "../sections/graphic-design/PricingSection";
-import ProcessSection from "../sections/graphic-design/ProcessSection";
-import ServicesSection from "../sections/graphic-design/ServicesSection";
-import TestimonialsSection from "../sections/graphic-design/TestimonialsSection";
-import WhyChooseUs from "../sections/graphic-design/WhyChooseUs";
-import "../styles/graphicDesignLanding.css";
+import AboutSection from "./sections/AboutSection";
+import BrandStrip from "./sections/BrandStrip";
+import ContactBriefSection from "./sections/ContactBriefSection";
+import FAQSection from "./sections/FAQSection";
+import FinalCTA from "./sections/FinalCTA";
+import HeroSection from "./sections/HeroSection";
+import PageHeader from "./sections/PageHeader";
+import PortfolioSection from "./sections/PortfolioSection";
+import PricingSection from "./sections/PricingSection";
+import ProcessSection from "./sections/ProcessSection";
+import ServicesSection from "./sections/ServicesSection";
+import TestimonialsSection from "./sections/TestimonialsSection";
+import WhyChooseUs from "./sections/WhyChooseUs";
 
 const routePages = {
   "/": "home",
@@ -54,18 +49,7 @@ function getPageFromHash() {
 
 export default function GraphicDesignLanding() {
   const [activePage, setActivePage] = useState(getPageFromHash);
-  const [activeTemplate, setActiveTemplate] = useState(() => {
-    const savedTemplate = window.localStorage.getItem("graphic-design-template");
-    const isValidTemplate = colorTemplateOptions.some((template) => template.id === savedTemplate);
-
-    return isValidTemplate ? savedTemplate : ACTIVE_COLOR_PRESET;
-  });
-
-  const themeCss = useMemo(() => getGraphicDesignThemeCss(activeTemplate), [activeTemplate]);
-
-  useEffect(() => {
-    window.localStorage.setItem("graphic-design-template", activeTemplate);
-  }, [activeTemplate]);
+  const { activeTemplate, setActiveTemplate, templates, themeCss } = useTheme();
 
   useEffect(() => {
     const onHashChange = () => setActivePage(getPageFromHash());
@@ -180,11 +164,11 @@ export default function GraphicDesignLanding() {
       <style>{themeCss}</style>
       <div className="landing">
         <div className="noise-overlay" />
-        <Navbar
+        <Header
           links={navLinks}
           site={siteConfig}
           cta={navCta}
-          templates={colorTemplateOptions}
+          templates={templates}
           activeTemplate={activeTemplate}
           onTemplateChange={setActiveTemplate}
           activePage={activePage}

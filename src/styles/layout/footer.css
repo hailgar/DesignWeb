@@ -1,0 +1,106 @@
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.footer {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  padding: 64px 0 0;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 56px;
+  padding-bottom: 48px;
+}
+
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  display: block;
+  margin-bottom: 7px;
+}
+
+.footer-brand p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 18px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 18px;
+}
+.footer-contact a {
+  font-size: 13px;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+.footer-contact a:hover { color: var(--text); }
+
+.footer-social {
+  display: flex;
+  gap: 7px;
+}
+.footer-social a {
+  width: 34px; height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  font-family: var(--font-display);
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--text-muted);
+  transition: var(--t);
+}
+.footer-social a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+  background: var(--accent-dim);
+}
+
+.footer-col h4 {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 14px;
+}
+
+.footer-col ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer-col a {
+  font-size: 13.5px;
+  color: var(--text-muted);
+  transition: color 0.2s;
+}
+.footer-col a:hover { color: var(--text); }
+
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding: 18px 0;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-bottom span {
+  font-size: 12px;
+  color: var(--text-faint);
+}

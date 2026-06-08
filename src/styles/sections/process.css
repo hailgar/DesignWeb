@@ -1,0 +1,73 @@
+/* ============================================================
+   PROCESS
+   ============================================================ */
+.process-track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: relative;
+  margin-top: 56px;
+}
+
+.process-line {
+  position: absolute;
+  top: 42px;
+  left: 12.5%;
+  right: 12.5%;
+  height: 1px;
+  background: var(--gradient-process-line);
+  opacity: 0.5;
+}
+
+.process-step {
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.step-num {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-faint);
+  margin-bottom: 18px;
+}
+
+.step-node {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  margin: 0 auto 22px;
+}
+
+.node-dot {
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: var(--shadow-node);
+}
+
+.node-ring {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 22px; height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-border-ring);
+  animation: ring-breathe 3s ease-in-out infinite;
+}
+
+.step-body h3 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 9px;
+}
+
+.step-body p {
+  font-size: 13px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}

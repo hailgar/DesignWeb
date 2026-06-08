@@ -1,0 +1,239 @@
+/* ============================================================
+   CONTACT BRIEF
+   ============================================================ */
+.contact-brief {
+  background: var(--bg);
+  padding-top: 92px;
+}
+
+.contact-brief-inner {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.88fr) minmax(0, 1.12fr);
+  gap: 36px;
+  align-items: start;
+}
+
+.contact-copy {
+  position: sticky;
+  top: 112px;
+}
+
+.contact-cards {
+  display: grid;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 78px;
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background:
+    linear-gradient(135deg, var(--glass), transparent),
+    var(--surface);
+  transition: var(--t);
+}
+.contact-card:hover {
+  border-color: var(--contact);
+  transform: translateX(5px);
+  box-shadow: var(--shadow-card);
+}
+.contact-card-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--r-sm);
+  background: var(--bg);
+  color: var(--contact);
+}
+.contact-card-content {
+  min-width: 0;
+}
+.contact-card small {
+  display: block;
+  color: var(--text-faint);
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.contact-card strong {
+  display: block;
+  color: var(--text);
+  font-size: 14px;
+  margin-top: 2px;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.contact-notes {
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  background: var(--surface);
+}
+.contact-notes li {
+  position: relative;
+  padding-left: 18px;
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+.contact-notes li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: var(--shadow-badge-dot);
+}
+
+.brief-form {
+  position: relative;
+  padding: 28px;
+  border: 1px solid var(--border-md);
+  border-radius: var(--r-lg);
+  background:
+    linear-gradient(135deg, var(--glass), transparent),
+    var(--surface);
+  box-shadow: var(--shadow-card-lg);
+  overflow: hidden;
+}
+.brief-form::before {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  right: -90px;
+  top: -120px;
+  border-radius: 50%;
+  background: var(--hero-blob-accent);
+  filter: blur(18px);
+  opacity: 0.8;
+  animation: blob-drift 8s ease-in-out infinite;
+}
+.brief-form > * {
+  position: relative;
+  z-index: 1;
+}
+.brief-form-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+.brief-form-top div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brief-form-top span {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: var(--black);
+  font-family: var(--font-display);
+  font-weight: 800;
+}
+.brief-form-top p {
+  color: var(--text-faint);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.brief-form-top strong {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 13px;
+}
+
+.brief-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.brief-form label {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+}
+.brief-form .brief-full {
+  margin-bottom: 12px;
+}
+.brief-form input,
+.brief-form select,
+.brief-form textarea {
+  width: 100%;
+  border: 1px solid var(--border-md);
+  border-radius: var(--r-sm);
+  background: var(--bg);
+  color: var(--text);
+  color-scheme: dark;
+  font: inherit;
+  font-family: var(--font-body);
+  font-size: 14px;
+  padding: 12px 13px;
+  outline: none;
+  transition: var(--t);
+}
+.brief-form textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+.brief-form input:focus,
+.brief-form select:focus,
+.brief-form textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-dim);
+}
+
+.brief-helper {
+  color: var(--text-faint);
+  font-size: 12px;
+  line-height: 1.55;
+  margin-bottom: 18px;
+}
+
+.brief-submit {
+  width: 100%;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: var(--r-sm);
+  background: var(--accent);
+  color: var(--black);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 800;
+  transition: var(--t);
+}
+.brief-submit:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-accent-button);
+}

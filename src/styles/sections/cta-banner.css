@@ -1,0 +1,57 @@
+/* ============================================================
+   FINAL CTA
+   ============================================================ */
+.final-cta {
+  position: relative;
+  padding: 120px 0;
+  text-align: center;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.cta-glow {
+  position: absolute;
+  width: 900px; height: 900px;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--gradient-cta-glow);
+  pointer-events: none;
+}
+
+.cta-inner { position: relative; z-index: 1; }
+
+.cta-eyebrow {
+  font-family: var(--font-display);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 22px;
+}
+
+.cta-headline {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5.6vw, 70px);
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+  margin-bottom: 18px;
+}
+
+.cta-sub {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.72;
+  max-width: 500px;
+  margin: 0 auto 38px;
+}
+
+.cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
