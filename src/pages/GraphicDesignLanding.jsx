@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
 import { useTheme } from "../context/ThemeContext";
@@ -9,46 +9,8 @@ import HomePage from "./HomePage";
 import PortfolioPage from "./PortfolioPage";
 import ServicesPage from "./ServicesPage";
 
-const routePages = {
-  "/": "home",
-  "/tentang": "tentang",
-  "/layanan": "layanan",
-  "/portfolio": "portfolio",
-  "/kontak": "kontak",
-};
-
-const legacyHashPages = {
-  "#about": "tentang",
-  "#tentang": "tentang",
-  "#services": "layanan",
-  "#pricing": "layanan",
-  "#process": "layanan",
-  "#faq": "layanan",
-  "#portfolio": "portfolio",
-  "#brief": "kontak",
-};
-
-function getPageFromHash() {
-  const hash = window.location.hash || "#/";
-
-  if (legacyHashPages[hash]) {
-    return legacyHashPages[hash];
-  }
-
-  const route = hash.replace("#", "") || "/";
-  return routePages[route] || "home";
-}
-
-export default function GraphicDesignLanding() {
-  const [activePage, setActivePage] = useState(getPageFromHash);
+export default function GraphicDesignLanding({ activePage }) {
   const { activeTemplate, setActiveTemplate, templates, themeCss } = useTheme();
-
-  useEffect(() => {
-    const onHashChange = () => setActivePage(getPageFromHash());
-    window.addEventListener("hashchange", onHashChange);
-
-    return () => window.removeEventListener("hashchange", onHashChange);
-  }, []);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });

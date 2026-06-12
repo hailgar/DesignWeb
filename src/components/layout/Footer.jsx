@@ -1,5 +1,14 @@
+import { Link } from "react-router-dom";
 import Container from "../ui/Container";
 import Logo from "../ui/Logo";
+
+function FooterLink({ href, children }) {
+  if (typeof href === "string" && href.startsWith("/")) {
+    return <Link to={href}>{children}</Link>;
+  }
+
+  return <a href={href}>{children}</a>;
+}
 
 export default function Footer({ site, links }) {
   return (
@@ -28,7 +37,7 @@ export default function Footer({ site, links }) {
           <ul>
             {links.services.links.map((link) => (
               <li key={link.label}>
-                <a href={link.href}>{link.label}</a>
+                <FooterLink href={link.href}>{link.label}</FooterLink>
               </li>
             ))}
           </ul>
@@ -39,7 +48,7 @@ export default function Footer({ site, links }) {
           <ul>
             {links.company.links.map((link) => (
               <li key={link.label}>
-                <a href={link.href}>{link.label}</a>
+                <FooterLink href={link.href}>{link.label}</FooterLink>
               </li>
             ))}
           </ul>

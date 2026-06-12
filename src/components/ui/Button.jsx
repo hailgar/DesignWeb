@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Button({
   as: Component,
   href,
@@ -7,13 +9,15 @@ export default function Button({
   children,
   ...props
 }) {
-  const Element = Component || (href ? "a" : "button");
+  const isInternalLink = !Component && typeof href === "string" && href.startsWith("/");
+  const Element = Component || (isInternalLink ? Link : href ? "a" : "button");
   const classes = ["btn", `btn-${variant}`, size && `btn-${size}`, className]
     .filter(Boolean)
     .join(" ");
+  const linkProps = isInternalLink ? { to: href } : href ? { href } : {};
 
   return (
-    <Element href={href} className={classes} {...props}>
+    <Element className={classes} {...linkProps} {...props}>
       {children}
     </Element>
   );

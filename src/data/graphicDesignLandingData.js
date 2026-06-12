@@ -40,16 +40,16 @@ export const siteConfig = {
 };
 
 export const navLinks = [
-  { label: "Home", href: "#/", page: "home" },
-  { label: "Tentang", href: "#/tentang", page: "tentang" },
-  { label: "Layanan", href: "#/layanan", page: "layanan" },
-  { label: "Portfolio", href: "#/portfolio", page: "portfolio" },
-  { label: "Kontak", href: "#/kontak", page: "kontak" },
+  { label: "Home", href: "/", page: "home" },
+  { label: "Tentang", href: "/tentang", page: "tentang" },
+  { label: "Layanan", href: "/layanan", page: "layanan" },
+  { label: "Portfolio", href: "/portfolio", page: "portfolio" },
+  { label: "Kontak", href: "/kontak", page: "kontak" },
 ];
 
 export const navCta = {
   label: "Brief Project",
-  href: "#/kontak",
+  href: "/kontak",
 };
 
 export const pageHeaderData = {
@@ -136,7 +136,7 @@ export const heroData = {
     "Kami bantu UMKM tampil profesional lewat logo, identitas visual, konten sosial media, company profile, dan desain promosi yang siap dipakai jualan.",
   ctas: [
     { label: "Konsultasi via WhatsApp", href: whatsappHref, variant: "primary", icon: "arrow-right" },
-    { label: "Lihat Portfolio", href: "#/portfolio", variant: "ghost" },
+    { label: "Lihat Portfolio", href: "/portfolio", variant: "ghost" },
   ],
   stats: [
     { value: "200+", label: "Desain selesai" },
@@ -240,7 +240,7 @@ export const whyChooseUsData = {
     "Kami merancang visual dengan tujuan yang jelas: brand terlihat profesional, mudah dikenali, dan lebih siap dipakai di channel penjualan.",
   cta: {
     label: "Lihat Paket",
-    href: "#/layanan",
+    href: "/layanan",
   },
   benefits: [
     {
@@ -512,7 +512,7 @@ export const finalCtaData = {
     "Kirim brief singkat lewat WhatsApp. Kami bantu rekomendasikan paket desain yang paling masuk akal untuk tahap bisnis kamu.",
   ctas: [
     { label: "Chat WhatsApp", href: whatsappHref, variant: "primary", icon: "arrow-right" },
-    { label: "Isi Brief", href: "#/kontak", variant: "ghost" },
+    { label: "Isi Brief", href: "/kontak", variant: "ghost" },
   ],
 };
 
@@ -561,21 +561,21 @@ export const footerLinks = {
   services: {
     title: "Layanan",
     links: [
-      { label: "Logo Design", href: "#/layanan" },
-      { label: "Brand Identity", href: "#/layanan" },
-      { label: "Social Media Kit", href: "#/layanan" },
-      { label: "Packaging", href: "#/layanan" },
-      { label: "Company Profile", href: "#/layanan" },
+      { label: "Logo Design", href: "/layanan" },
+      { label: "Brand Identity", href: "/layanan" },
+      { label: "Social Media Kit", href: "/layanan" },
+      { label: "Packaging", href: "/layanan" },
+      { label: "Company Profile", href: "/layanan" },
     ],
   },
   company: {
     title: "Navigasi",
     links: [
-      { label: "Home", href: "#/" },
-      { label: "Tentang", href: "#/tentang" },
-      { label: "Layanan", href: "#/layanan" },
-      { label: "Portfolio", href: "#/portfolio" },
-      { label: "Kontak", href: "#/kontak" },
+      { label: "Home", href: "/" },
+      { label: "Tentang", href: "/tentang" },
+      { label: "Layanan", href: "/layanan" },
+      { label: "Portfolio", href: "/portfolio" },
+      { label: "Kontak", href: "/kontak" },
       { label: "WhatsApp", href: whatsappHref },
     ],
   },

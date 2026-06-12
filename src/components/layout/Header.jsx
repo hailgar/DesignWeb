@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import Button from "../ui/Button";
 import Container from "../ui/Container";
 import Logo from "../ui/Logo";
@@ -34,13 +35,13 @@ export default function Header({
         <ul className={`nav-links ${open ? "open" : ""}`}>
           {links.map((link) => (
             <li key={link.label}>
-              <a
-                href={link.href}
+              <Link
+                to={link.href}
                 className={link.page === activePage ? "active" : ""}
                 onClick={close}
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
           <li className="nav-cta-mobile">
